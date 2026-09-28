@@ -1,0 +1,94 @@
+/* =====================================================
+   ESTILOS DE REPORTES - RED FORGE (Día 14 y 15)
+   ================================================───── */
+
+body.reporte-body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.reporte-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.reporte-header {
+    text-align: center;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.reporte-header h1 {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.reporte-header p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.tabla-reporte {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.tabla-reporte th, .tabla-reporte td {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tabla-reporte th {
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
+
+.badge-critico {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.badge-ok {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+.reporte-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+/* Reglas especiales para cuando el usuario imprima el reporte en PDF o papel */
+@media print {
+    body {
+        background-color: #fff;
+        padding: 0;
+    }
+    .reporte-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+    .no-print {
+        display: none;
+    }
+}

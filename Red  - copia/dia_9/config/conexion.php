@@ -1,5 +1,5 @@
 <?php
-// Configuración de la base de datos y conexión unificadas con PDO - Red Forge
+// Configuración de la base de datos y conexión unificadas
 $host = 'localhost';
 $db   = 'red_forge';
 $user = 'root';
@@ -15,6 +15,8 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
+    // Opcional: Descomenta la siguiente línea solo para verificar la conexión visualmente
+    // echo "¡Conexión exitosa a la base de datos!";
 } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }

@@ -3,7 +3,6 @@
         <li><a href="dashboard.php">Inicio / Dashboard</a></li>
         <li><a href="productos.php">Gestión de Productos</a></li>
         <li><a href="catalogo_cliente.php">Catálogo de Clientes</a></li>
-        <li><a href="app/vistas/reportes/reporte_inventario.php">Ver Reporte de Inventario</a></li>
         <li><a href="app/config/seguridad/logout.php">Cerrar Sesión</a></li>
     </ul>
 </nav>

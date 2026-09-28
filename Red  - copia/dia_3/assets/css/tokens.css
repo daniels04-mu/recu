@@ -1,0 +1,10 @@
+:root {
+  /* Identidad visual Red Forge (Rojo Forja y Acero) */
+  --color-primario-hsl: 15, 85%, 55%; 
+  --color-primario: hsl(var(--color-primario-hsl));
+  --color-primario-oscuro: hsl(15, 85%, 35%);
+  --color-fondo: hsl(210, 20%, 97%);
+  --color-superficie: #ffffff;
+  --color-texto: hsl(210, 20%, 15%);
+  --radio-borde: 8px;
+}
